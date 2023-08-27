@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}
+Search
+{% endblock title %}
+{% block body %}
+<div class="row">
+    <div class="col-12">
+        <h1 class="  text-center mt-3">Search</h1>
+    </div>
+</div>
+
+<div class="row d-flex justify-content-center mt-3">
+    <div class="col-6">
+        <form class="d-flex" role="search" action="{% url 'news_search:result' %}">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="keyword">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </div>
+</div>
+{% endblock body %}

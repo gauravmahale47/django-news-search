@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}
+Home
+{% endblock title %}
+{% block body %}
+<div class="row">
+    <div class="col-12">
+        <h1 class="  text-center mt-3">Welcome to News Blog
+            {% if request.user.id is not none %}
+            {{request.user.first_name}} {{request.user.last_name}}
+            {% endif %}
+        </h1>
+    </div>
+</div>
+
+{% if messages %}
+<div class="row">
+    <div class="col-sm-12 mb-2">
+        {% for message in messages %}
+        <h5 class="  text-center">{{message}}</h5>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
+{% endblock body %}

@@ -1,0 +1,78 @@
+# Compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+
+# Development / local settings
+settings_local.py
+db.sqlite3
+*.log
+
+# Secret keys
+*.secret_key
+
+# Media files
+media/
+
+# Compiled assets
+staticfiles/
+*.static
+
+# Database migrations
+*/migrations/
+
+# Package files
+*.egg-info/
+*.egg
+
+# Environment files
+.env
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# IDE specific files
+.vscode/
+.idea/
+*.pyc
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.user
+*.userosscache
+*.sln.docstates
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Windows thumbnail cache files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
